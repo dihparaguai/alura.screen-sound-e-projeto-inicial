@@ -3,7 +3,7 @@
 internal class Album : IAvaliavel
 {
     private List<Avaliacao> notas = new();
-    private List<Musica> musicas = new List<Musica>();
+    private List<Musica> musicas = new();
 
     public Album(string nome)
     {

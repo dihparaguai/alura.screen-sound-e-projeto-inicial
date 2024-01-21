@@ -3,17 +3,17 @@
 internal class Musica
 {
     private List<Avaliacao> notas = new();
-    public Musica(Banda artista, string nome)
+    public Musica(string nome, Banda artista)
     {
-        Artista = artista;
         Nome = nome;
+        Artista = artista;
     }
 
     public string Nome { get; }
     public Banda Artista { get; }
     public int Duracao { get; set; }
     public bool Disponivel { get; set; }
-    public string DescricaoResumida => $"A música {Nome} pertence à banda {Artista}";
+    public string DescricaoResumida => $"A música {Nome} pertence à banda {Artista.Nome}";
     public double Media
     {
         get
